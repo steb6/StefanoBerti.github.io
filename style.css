@@ -21,7 +21,6 @@ h1 {
     text-align: center;
 }
 
-
 midi-visualizer svg rect.note {
   opacity: 0.6;
   stroke-width: 2;

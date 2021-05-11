@@ -1,0 +1,38 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
+	<link rel="stylesheet" href="style.css">
+    <script>
+        function gen(bars){
+            let mx = 99
+            let mn = 0
+            i = Math.floor(Math.random()*(mx-mn+1)+mn);
+            let ind = i.toString();
+            let n_bars = bars.toString()
+            let name = "gen" + n_bars + "/GEN_generated_" + ind + ".mid";
+            document.getElementById("visualizer").src = name;
+            document.getElementById("player").src = name;
+            document.getElementById("downloader").href = name;
+            document.getElementById("downloader").proposed_file_name = name;
+        }
+    </script>
+</head>
+
+<body>
+
+<h1>Song Generator</h1>
+<div class="row" id="row">
+    <div class="big-column" id="gen">
+    <midi-visualizer src="gen1/GEN_generated_0.mid" id="visualizer">
+    </midi-visualizer>
+    <midi-player src="gen1/GEN_generated_0.mid" sound-font visualizer="#gen midi-visualizer" id="player">
+    </midi-player>
+        <a href="path_to_file" download="proposed_file_name" id="downloader">Download</a>
+    <br>
+        <input type="button" value="Generate 1-bar" onclick="gen(1)">
+        <input type="button" value="Generate 2-bars" onclick="gen(2)">
+    </div>
+</div>
+
+</body>
+</html>
