@@ -107,3 +107,80 @@ body {
     margin-top: 7rem;
   }
 }
+
+/* MY THINGS */
+.lightbox-gallery {
+    background-image: linear-gradient(#4A148C, #E53935);
+    background-repeat: no-repeat;
+    color: #000;
+    overflow-x: hidden
+}
+
+.lightbox-gallery p {
+    color: #fff
+}
+
+.lightbox-gallery h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: #fff
+}
+
+@media (max-width:767px) {
+    .lightbox-gallery h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px
+    }
+}
+
+.lightbox-gallery .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px
+}
+
+.lightbox-gallery .intro p {
+    margin-bottom: 0
+}
+
+.lightbox-gallery .photos {
+    padding-bottom: 20px
+}
+
+.lightbox-gallery .item {
+    padding-bottom: 30px
+}
+
+
+/* WHO AM I */
+
+/* GOOGLE MAPS */
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+/* EMAIL */
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+	background: rgba(255,255,255,0.75);
+}
+body
+{
+	background-color: #F4EAD5;
+	background-image: url("images/window-484596_1280.jpg");
+	background-size: cover;
+}
