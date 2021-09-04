@@ -31,70 +31,6 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
-    <script>
-$(function()
-{
-    function after_form_submitted(data)
-    {
-        if(data.result == 'success')
-        {
-            $('form#reused_form').hide();
-            $('#success_message').show();
-            $('#error_message').hide();
-        }
-        else
-        {
-            $('#error_message').append('<ul></ul>');
-
-            jQuery.each(data.errors,function(key,val)
-            {
-                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
-            });
-            $('#success_message').hide();
-            $('#error_message').show();
-
-            //reverse the response on the button
-            $('button[type="button"]', $form).each(function()
-            {
-                $btn = $(this);
-                label = $btn.prop('orig_label');
-                if(label)
-                {
-                    $btn.prop('type','submit' );
-                    $btn.text(label);
-                    $btn.prop('orig_label','');
-                }
-            });
-
-        }//else
-    }
-
-	$('#reused_form').submit(function(e)
-      {
-        e.preventDefault();
-
-        $form = $(this);
-        //show some response on the button
-        $('button[type="submit"]', $form).each(function()
-        {
-            $btn = $(this);
-            $btn.prop('type','button' );
-            $btn.prop('orig_label',$btn.text());
-            $btn.text('Sending ...');
-        });
-
-
-                    $.ajax({
-                type: "POST",
-                url: 'handler.php',
-                data: $form.serialize(),
-                success: after_form_submitted,
-                dataType: 'json'
-            });
-
-      });
-});
-</script>
   </head>
   <body>
     <header>
@@ -217,5 +153,69 @@ $(function()
 </main>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+$(function()
+{
+    function after_form_submitted(data)
+    {
+        if(data.result == 'success')
+        {
+            $('form#reused_form').hide();
+            $('#success_message').show();
+            $('#error_message').hide();
+        }
+        else
+        {
+            $('#error_message').append('<ul></ul>');
+
+            jQuery.each(data.errors,function(key,val)
+            {
+                $('#error_message ul').append('<li>'+key+':'+val+'</li>');
+            });
+            $('#success_message').hide();
+            $('#error_message').show();
+
+            //reverse the response on the button
+            $('button[type="button"]', $form).each(function()
+            {
+                $btn = $(this);
+                label = $btn.prop('orig_label');
+                if(label)
+                {
+                    $btn.prop('type','submit' );
+                    $btn.text(label);
+                    $btn.prop('orig_label','');
+                }
+            });
+
+        }//else
+    }
+
+	$('#reused_form').submit(function(e)
+      {
+        e.preventDefault();
+
+        $form = $(this);
+        //show some response on the button
+        $('button[type="submit"]', $form).each(function()
+        {
+            $btn = $(this);
+            $btn.prop('type','button' );
+            $btn.prop('orig_label',$btn.text());
+            $btn.text('Sending ...');
+        });
+
+
+                    $.ajax({
+                type: "POST",
+                url: 'handler.php',
+                data: $form.serialize(),
+                success: after_form_submitted,
+                dataType: 'json'
+            });
+
+      });
+});
+</script>
   </body>
 </html>
