@@ -1,166 +1,221 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <title>Carousel Template · Bootstrap</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
-
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom ml-auto">
-    <img src="logo.png" width="100em">
-    <!-- <a class="navbar-brand" href="#">Carousel</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="chi-sono.html">Chi sono</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="galleria-strumenti.html">Galleria strumenti</a>
-        </li>
-        <li class="nav-item">
-          <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cosa propongo</a> -->
-          <a class="nav-link" href="cosa-propongo.html">Cosa propongo</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="eventi-in-programma.html">Eventi in programma<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contatti.html">Contatti</a>
-        </li>
-      </ul>
-      <!-- <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-    </div>
-  </nav>
-</header>
-
-<main role="main">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  </div>
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-<link rel="stylesheet" href="eventi.css">
-<div class="events_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <div class="single_event position-relative">
-                    <div class="event_thumb">
-                        <img src="https://via.placeholder.com/500x500/20B2AA/000000" alt="" />
-                    </div>
-                    <div class="event_details">
-                        <div class="d-flex mb-4">
-                            <div class="date"><span>15</span> Jun</div>
-                            <div class="time-location">
-                                <p><span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM</p>
-                                <p><span class="ti-location-pin mr-2"></span> Hilton Quebec</p>
-                            </div>
-                        </div>
-                        <p>
-                            One make creepeth man for so bearing their firmament won't fowl meat over seas great
-                        </p>
-                        <a href="#" class="btn btn-primary rounded-0 mt-3">View Details</a>
-                    </div>
-                </div>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Jekyll v4.1.1">
+      <title>Carousel Template · Bootstrap</title>
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+      <!-- Bootstrap core CSS -->
+      <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+         .bd-placeholder-img {
+         font-size: 1.125rem;
+         text-anchor: middle;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         }
+         @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+         }
+         }
+      </style>
+      <!-- Custom styles for this template -->
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom ml-auto">
+            <img src="logo.png" width="100em">
+            <!-- <a class="navbar-brand" href="#">Carousel</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="chi-sono.html">Chi sono</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="galleria-strumenti.html">Galleria strumenti</a>
+                  </li>
+                  <li class="nav-item">
+                     <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cosa propongo</a> -->
+                     <a class="nav-link" href="cosa-propongo.html">Cosa propongo</a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="eventi-in-programma.html">Eventi in programma<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contatti.html">Contatti</a>
+                  </li>
+               </ul>
+               <!-- <form class="form-inline mt-2 mt-md-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form> -->
             </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="single_event position-relative">
-                    <div class="event_thumb">
-                        <img src="https://via.placeholder.com/500x500/20B2AA/000000" alt="" />
-                    </div>
-                    <div class="event_details">
-                        <div class="d-flex mb-4">
-                            <div class="date"><span>15</span> Jun</div>
-                            <div class="time-location">
-                                <p><span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM</p>
-                                <p><span class="ti-location-pin mr-2"></span> Hilton Quebec</p>
-                            </div>
+         </nav>
+      </header>
+      <main role="main">
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+         </div>
+         <!-- Marketing messaging and featurettes
+            ================================================== -->
+         <!-- Wrap the rest of the page in another container to center all the content. -->
+         <div class="container marketing">
+            <link rel="stylesheet" href="eventi.css">
+
+            <div class="events_area">
+               <div class="container">
+                  <div class="row">
+
+                     <div class="col-lg-6 col-md-6">
+                        <div class="single_event position-relative">
+                           <div class="event_thumb">
+                              <img src="https://via.placeholder.com/500x500/20B2AA/000000" alt="" />
+                           </div>
+                           <div class="event_details">
+                              <div class="d-flex mb-4">
+                                 <div class="date"><span>15</span> Jun</div>
+                                 <div class="time-location">
+                                    <p><span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM</p>
+                                    <p><span class="ti-location-pin mr-2"></span> Hilton Quebec</p>
+                                 </div>
+                              </div>
+                              <p>
+                                 One make creepeth man for so bearing their firmament won't fowl meat over seas great
+                              </p>
+                              <a href="#" class="btn btn-primary rounded-0 mt-3" data-toggle="modal" data-target="#basicExampleModal1">View Details</a>
+                           </div>
                         </div>
-                        <p>
-                            One make creepeth man for so bearing their firmament won't fowl meat over seas great
-                        </p>
-                        <a href="#" class="btn btn-primary rounded-0 mt-3">View Details</a>
-                    </div>
-                </div>
-            </div>
-                      <div class="col-lg-6 col-md-6">
-                <div class="single_event position-relative">
-                    <div class="event_thumb">
-                        <img src="https://via.placeholder.com/500x500/20B2AA/000000" alt="" />
-                    </div>
-                    <div class="event_details">
-                        <div class="d-flex mb-4">
-                            <div class="date"><span>15</span> Jun</div>
-                            <div class="time-location">
-                                <p><span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM</p>
-                                <p><span class="ti-location-pin mr-2"></span> Hilton Quebec</p>
-                            </div>
+                     </div>
+                     <!-- Modal -->
+                     <div class="modal fade" id="basicExampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+                       aria-hidden="true">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLabel1">Modal title</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                             </button>
+                           </div>
+                           <div class="modal-body">
+                              Mauris pellentesque pulvinar pellentesque habitant morbi tristique. In cursus turpis massa tincidunt dui. Malesuada proin libero nunc consequat interdum varius sit. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Egestas sed sed risus pretium quam vulputate dignissim. A diam sollicitudin tempor id eu nisl nunc. Nulla porttitor massa id neque. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Sem fringilla ut morbi tincidunt augue interdum velit. Orci a scelerisque purus semper eget duis at tellus. Neque laoreet suspendisse interdum consectetur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vestibulum mattis ullamcorper velit sed ullamcorper. Ullamcorper morbi tincidunt ornare massa eget. Vitae tortor condimentum lacinia quis.
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="col-lg-6 col-md-6">
+                        <div class="single_event position-relative">
+                           <div class="event_thumb">
+                              <img src="https://via.placeholder.com/500x500/20B2AA/000000" alt="" />
+                           </div>
+                           <div class="event_details">
+                              <div class="d-flex mb-4">
+                                 <div class="date"><span>15</span> Jun</div>
+                                 <div class="time-location">
+                                    <p><span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM</p>
+                                    <p><span class="ti-location-pin mr-2"></span> Hilton Quebec</p>
+                                 </div>
+                              </div>
+                              <p>
+                                 One make creepeth man for so bearing their firmament won't fowl meat over seas great
+                              </p>
+                              <a href="#" class="btn btn-primary rounded-0 mt-3"  data-toggle="modal" data-target="#basicExampleModal2">View Details</a>
+                           </div>
                         </div>
-                        <p>
-                            One make creepeth man for so bearing their firmament won't fowl meat over seas great
-                        </p>
-                        <a href="#" class="btn btn-primary rounded-0 mt-3">View Details</a>
-                    </div>
-                </div>
+                     </div>
+                    <!-- Modal -->
+                     <div class="modal fade" id="basicExampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2"
+                       aria-hidden="true">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLabel2">Modal title</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                             </button>
+                           </div>
+                           <div class="modal-body">
+                              Mauris pellentesque pulvinar pellentesque habitant morbi tristique. In cursus turpis massa tincidunt dui. Malesuada proin libero nunc consequat interdum varius sit. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Egestas sed sed risus pretium quam vulputate dignissim. A diam sollicitudin tempor id eu nisl nunc. Nulla porttitor massa id neque. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Sem fringilla ut morbi tincidunt augue interdum velit. Orci a scelerisque purus semper eget duis at tellus. Neque laoreet suspendisse interdum consectetur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vestibulum mattis ullamcorper velit sed ullamcorper. Ullamcorper morbi tincidunt ornare massa eget. Vitae tortor condimentum lacinia quis.
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="col-lg-6 col-md-6">
+                        <div class="single_event position-relative">
+                           <div class="event_thumb">
+                              <img src="https://via.placeholder.com/500x500/20B2AA/000000" alt="" />
+                           </div>
+                           <div class="event_details">
+                              <div class="d-flex mb-4">
+                                 <div class="date"><span>15</span> Jun</div>
+                                 <div class="time-location">
+                                    <p><span class="ti-time mr-2"></span> 12:00 AM - 12:30 AM</p>
+                                    <p><span class="ti-location-pin mr-2"></span> Hilton Quebec</p>
+                                 </div>
+                              </div>
+                              <p>
+                                 One make creepeth man for so bearing their firmament won't fowl meat over seas great
+                              </p>
+                              <a href="#" class="btn btn-primary rounded-0 mt-3" data-toggle="modal" data-target="#basicExampleModal3">View Details</a>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Modal -->
+                     <div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
+                       aria-hidden="true">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <h5 class="modal-title" id="exampleModalLabel3">Modal title</h5>
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                             </button>
+                           </div>
+                           <div class="modal-body">
+                              Mauris pellentesque pulvinar pellentesque habitant morbi tristique. In cursus turpis massa tincidunt dui. Malesuada proin libero nunc consequat interdum varius sit. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Egestas sed sed risus pretium quam vulputate dignissim. A diam sollicitudin tempor id eu nisl nunc. Nulla porttitor massa id neque. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Sem fringilla ut morbi tincidunt augue interdum velit. Orci a scelerisque purus semper eget duis at tellus. Neque laoreet suspendisse interdum consectetur. Commodo viverra maecenas accumsan lacus vel facilisis volutpat. Vestibulum mattis ullamcorper velit sed ullamcorper. Ullamcorper morbi tincidunt ornare massa eget. Vitae tortor condimentum lacinia quis.
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</div>
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <footer class="fixed-bottom">
-    <p class="float-right"><a href="#">Torna in cima</a></p>
-    <p>&copy; Sito creato da <a href="https://github.com/stefanoberti">Stefano Berti</a></p>
-  </footer>
-</main>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+         </div>
+         <!-- /.container -->
+         <!-- FOOTER -->
+         <footer class="fixed-bottom">
+            <p class="float-right"><a href="#">Torna in cima</a></p>
+            <p>&copy; Sito creato da <a href="https://github.com/stefanoberti">Stefano Berti</a></p>
+         </footer>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+   </body>
 </html>

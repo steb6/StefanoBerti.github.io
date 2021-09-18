@@ -1,209 +1,179 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <title>Carousel Template · Bootstrap</title>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Jekyll v4.1.1">
+      <title>Carousel Template · Bootstrap</title>
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+      <!-- Bootstrap core CSS -->
+      <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+         .bd-placeholder-img {
+         font-size: 1.125rem;
+         text-anchor: middle;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         user-select: none;
+         }
+         @media (min-width: 768px) {
+         .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+         }
+         }
+      </style>
+      <!-- Custom styles for this template -->
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom ml-auto">
+            <img src="logo.png" width="100em">
+            <!-- <a class="navbar-brand" href="#">Carousel</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                     <a class="nav-link" href="chi-sono.html">Chi sono<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="galleria-strumenti.html">Galleria strumenti</a>
+                  </li>
+                  <li class="nav-item">
+                     <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cosa propongo</a> -->
+                     <a class="nav-link" href="cosa-propongo.html">Cosa propongo</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="eventi-in-programma.html">Eventi in programma</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contatti.html">Contatti</a>
+                  </li>
+               </ul>
+               <!-- <form class="form-inline mt-2 mt-md-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form> -->
+            </div>
+         </nav>
+      </header>
+      <main role="main">
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+         </div>
+         <!-- Marketing messaging and featurettes
+            ================================================== -->
+         <!-- Wrap the rest of the page in another container to center all the content. -->
+         <div class="container marketing">
+            <div class="container my-4">
+               <!--
+                  <p class="font-weight-bold">An example of bootstrap tabs vertical . Easy to implement and customize. Examples of basic and advanced usage.</p>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+                  <p>
+                    <strong>Detailed documentation and more examples you can find in our
+                    <a href="https://mdbootstrap.com/docs/jquery/components/pills/" target="_blank">Docs</a>
+                    </strong>
+                  </p>
 
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+                  <hr>
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-custom ml-auto">
-    <img src="logo.png" width="100em">
-    <!-- <a class="navbar-brand" href="#">Carousel</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="chi-sono.html">Chi sono<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="galleria-strumenti.html">Galleria strumenti</a>
-        </li>
-        <li class="nav-item">
-          <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cosa propongo</a> -->
-          <a class="nav-link" href="cosa-propongo.html">Cosa propongo</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="eventi-in-programma.html">Eventi in programma</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contatti.html">Contatti</a>
-        </li>
-      </ul>
-      <!-- <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-    </div>
-  </nav>
-</header>
-
-<main role="main">
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  </div>
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container marketing">
-
-<div class="container my-4">
-
-    <!--
-    <p class="font-weight-bold">An example of bootstrap tabs vertical . Easy to implement and customize. Examples of basic and advanced usage.</p>
-
-    <p>
-      <strong>Detailed documentation and more examples you can find in our
-      <a href="https://mdbootstrap.com/docs/jquery/components/pills/" target="_blank">Docs</a>
-      </strong>
-    </p>
-
-		<hr>
-
-    <p class="font-weight-bold">Basic example</p>
-    -->
-        <!--Grid row-->
-    <div class="row">
-
-      <!--Grid column-->
-      <div class="col-md-3 mb-4 ">
-
-        <ul class="nav md-pills pills-secondary d-flex flex-column">
-          <li class="nav-item">
-            <a class="btn btn-primary active" data-toggle="tab" href="#panel11" role="tab">La mia storia</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-primary" data-toggle="tab" href="#panel12" role="tab">I miei studi</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-primary" data-toggle="tab" href="#panel13" role="tab">La mia esperienza</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-primary" data-toggle="tab" href="#panel14" role="tab">Il mio futuro</a>
-          </li>
-        </ul>
-
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-9 mb-4">
-
-        <!-- Tab panels -->
-        <div class="tab-content pt-0">
-
-          <!--Panel 1-->
-          <div class="tab-pane fade in show active" id="panel11" role="tabpanel">
-            <br>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-              porro voluptate odit minima.</p>
-
-          </div>
-          <!--/.Panel 1-->
-
-          <!--Panel 2-->
-          <div class="tab-pane fade" id="panel12" role="tabpanel">
-            <br>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-              porro voluptate odit minima.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-              porro voluptate odit minima.</p>
-
-          </div>
-          <!--/.Panel 2-->
-
-          <!--Panel 3-->
-          <div class="tab-pane fade" id="panel13" role="tabpanel">
-            <br>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-              porro voluptate odit minima.</p>
-
-          </div>
-          <!--/.Panel 3-->
-
-          <!--Panel 4-->
-          <div class="tab-pane fade" id="panel14" role="tabpanel">
-            <br>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-              porro voluptate odit minima.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-              porro voluptate odit minima.</p>
-
-          </div>
-          <!--/.Panel 4-->
-
-        </div>
-
-
-      </div>
-      <!--Grid column-->
-
-    </div>
-    <!--Grid row-->
-
-  </div>
-
-    <!--<hr class="featurette-divider">-->
-
-    <!-- /END THE FEATURETTES -->
-
-  </div><!-- /.container -->
-
-
-  <!-- FOOTER -->
-  <footer class="fixed-bottom">
-    <p class="float-right"><a href="#">Torna in cima</a></p>
-    <p>&copy; Sito creato da <a href="https://github.com/stefanoberti">Stefano Berti</a></p>
-  </footer>
-</main>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                  <p class="font-weight-bold">Basic example</p>
+                  -->
+               <!--Grid row-->
+               <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-3 mb-4 ">
+                     <ul class="nav md-pills pills-secondary d-flex flex-column">
+                        <li class="nav-item">
+                           <a class="btn btn-primary active" data-toggle="tab" href="#panel11" role="tab">La mia storia</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="btn btn-primary" data-toggle="tab" href="#panel12" role="tab">I miei studi</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="btn btn-primary" data-toggle="tab" href="#panel13" role="tab">La mia esperienza</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="btn btn-primary" data-toggle="tab" href="#panel14" role="tab">Il mio futuro</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!--Grid column-->
+                  <!--Grid column-->
+                  <div class="col-md-9 mb-4">
+                     <!-- Tab panels -->
+                     <div class="tab-content pt-0">
+                        <!--Panel 1-->
+                        <div class="tab-pane fade in show active" id="panel11" role="tabpanel">
+                           <br>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                              porro voluptate odit minima.
+                           </p>
+                        </div>
+                        <!--/.Panel 1-->
+                        <!--Panel 2-->
+                        <div class="tab-pane fade" id="panel12" role="tabpanel">
+                           <br>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                              porro voluptate odit minima.
+                           </p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                              porro voluptate odit minima.
+                           </p>
+                        </div>
+                        <!--/.Panel 2-->
+                        <!--Panel 3-->
+                        <div class="tab-pane fade" id="panel13" role="tabpanel">
+                           <br>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                              porro voluptate odit minima.
+                           </p>
+                        </div>
+                        <!--/.Panel 3-->
+                        <!--Panel 4-->
+                        <div class="tab-pane fade" id="panel14" role="tabpanel">
+                           <br>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                              porro voluptate odit minima.
+                           </p>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
+                              reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
+                              porro voluptate odit minima.
+                           </p>
+                        </div>
+                        <!--/.Panel 4-->
+                     </div>
+                  </div>
+                  <!--Grid column-->
+               </div>
+               <!--Grid row-->
+            </div>
+            <!--<hr class="featurette-divider">-->
+            <!-- /END THE FEATURETTES -->
+         </div>
+         <!-- /.container -->
+         <!-- FOOTER -->
+         <footer class="fixed-bottom">
+            <p class="float-right"><a href="#">Torna in cima</a></p>
+            <p>&copy; Sito creato da <a href="https://github.com/stefanoberti">Stefano Berti</a></p>
+         </footer>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+   </body>
 </html>

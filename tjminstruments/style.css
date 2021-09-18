@@ -279,3 +279,7 @@ body{margin-top:20px;}
 .single_event:hover h4 a {
     color: #fdc632;
 }
+
+.carousel-inner{
+    height: 100em;
+}
