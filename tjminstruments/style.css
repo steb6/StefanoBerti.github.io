@@ -126,7 +126,7 @@ margin: 100;}
 /* GALLERY */
 
 .card{
-    background-color: rgba(0, 0, 0, 0.2)!important:
+    background-color: rgba(0, 0, 0, 0.2)!important;
 }
 
 
@@ -285,3 +285,6 @@ body{margin-top:20px;}
     height: 100em;
 }
 
+.contacts{
+font-size: 25px;
+text-align: center;
