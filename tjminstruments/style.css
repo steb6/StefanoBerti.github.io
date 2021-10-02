@@ -38,7 +38,7 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Declare heights because of positioning of img element */
@@ -101,11 +101,11 @@ body {
   }
 }
 
-@media (min-width: 62em) {
+/*@media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
   }
-}
+}*/
 
 /* MY THINGS */
 footer {
@@ -176,6 +176,7 @@ margin: 100;}
 
 
 /* WHO AM I */
+
 
 /* GOOGLE MAPS */
 .map-container{
@@ -283,3 +284,4 @@ body{margin-top:20px;}
 .carousel-inner{
     height: 100em;
 }
+
